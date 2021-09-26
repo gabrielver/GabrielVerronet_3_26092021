@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'roboto', sans-serif;
+    src: url(/Roboto/Roboto-Regular.ttf);
+    font-family: 'Shrinkand', cursive;
+    src: url(/Shrikhand/Shrikhand-Regular.ttf);
+  }
+  
+$lightgrey: #f7f7f7;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+  }
+
+  nav{
+    font-family: 'Shrikhand', cursive;
+  }
+.restau{
+  padding: 1rem 1rem;
+    background: #f7f7f7;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+   a{
+    margin: 1rem 0rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow:  2.5px 0px 10px 2.5px rgb(212, 212, 212);
+    text-decoration: none;
+    position: relative;
+    }
+
+      img{
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0rem 0rem;
+      }
+      .name{
+        margin-left: 1rem;
+        padding: 0.75rem 0rem;
+        color: black;
+        
+      }
+
+      i{
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+      }
+
+      h4{
+        color: lightgray;
+        
+      }
+
+      p{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #13614d;
+        background-color: #99E2D0;
+        padding: 0.25rem;
+      }
+
+footer{
+  background: #3b3b3b;
+  color: white;
+}
