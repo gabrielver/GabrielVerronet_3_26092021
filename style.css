@@ -68,9 +68,33 @@ nav h1 {
           align-items: center;
 }
 
+.intro .explore button {
+  color: white;
+  font-weight: 400;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4rem;
+  border: none;
+  -webkit-box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.4);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CE67CB), color-stop(88%, #992B79), to(#9B0B80));
+  background: linear-gradient(to bottom, #CE67CB 0%, #992B79 88%, #9B0B80 100%);
+}
+
 .intro .tuto {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.intro .tuto li {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0.5rem 0rem;
+  margin: 1rem 4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.75rem;
+  background: #f7f7f7;
+  -webkit-box-shadow: 5px -1px 12px 1px rgba(0, 0, 0, 0.45);
+          box-shadow: 5px -1px 12px 1px rgba(0, 0, 0, 0.45);
 }
 
 .restau {
@@ -162,6 +186,7 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 0.5rem;
 }
 
 footer a i {

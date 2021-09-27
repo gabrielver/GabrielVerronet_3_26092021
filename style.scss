@@ -56,18 +56,39 @@ box-shadow: 1px 8px 14px -7px rgba(0,0,0,0.75) inset;;
 .intro{ 
 font-family: $roboto;
 
-.explore{
-  padding: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .explore{
+      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-}
-.tuto{
-  text-align: center;
-  margin-bottom: 1rem;
-}
+      button{
+        color: white;
+        font-weight: 400;
+        padding: 0.5rem 0.5rem;
+        border-radius: 4rem;
+        border: none;
+        box-shadow: 2px 15px 37px -5px rgba(0,0,0,0.4);
+        background:linear-gradient(to bottom, #CE67CB 0%, #992B79 88%, #9B0B80 100%);
+      }
+
+  }
+  .tuto{
+    text-align: center;
+    margin-bottom: 1rem;
+
+    li{
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0.5rem 0rem;
+      margin: 1rem 4rem;
+      margin-bottom: 0.5rem;
+      border-radius: 0.75rem;
+      background: #f7f7f7;
+      box-shadow: 5px -1px 12px 1px rgba(0,0,0,0.45);
+    }
+  }
 }
 .restau{
 padding: 1rem 1rem;
@@ -128,6 +149,7 @@ a{
 footer{
 background: #3b3b3b;
 
+
 h1{
   font-family: $shrink;
   color: white;
@@ -140,6 +162,7 @@ text-decoration: none;
 margin-left: 1rem;
 display: flex;
 flex-direction: column;
+padding-bottom: 0.5rem;
 
   i{
     margin-right: 10px;
