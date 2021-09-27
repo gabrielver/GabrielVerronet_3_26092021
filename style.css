@@ -42,9 +42,9 @@ nav h1 {
 .maps {
   padding: 0.5rem 1rem;
   text-align: center;
-  background: lightgray;
-  -webkit-box-shadow: 1px 8px 14px -7px rgba(0, 0, 0, 0.75) inset;
-          box-shadow: 1px 8px 14px -7px rgba(0, 0, 0, 0.75) inset;
+  background: #f7f7f7;
+  -webkit-box-shadow: 2px 37px 62px -6px rgba(0, 0, 0, 0.4) inset;
+          box-shadow: 2px 37px 62px -6px rgba(0, 0, 0, 0.4) inset;
 }
 
 .intro {
@@ -52,6 +52,7 @@ nav h1 {
 }
 
 .intro .explore {
+  background: #f7f7f7;
   padding: 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
