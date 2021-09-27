@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  height: 100vh;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 15px;
+  color: gray;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 15px;
+  color: darkgray;
+  font-weight: 100;
+}
+
+nav {
+  font-family: "Shrikhand";
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+.maps {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background: lightgray;
+  -webkit-box-shadow: 1px 8px 14px -7px rgba(0, 0, 0, 0.75) inset;
+          box-shadow: 1px 8px 14px -7px rgba(0, 0, 0, 0.75) inset;
+}
+
+.intro {
+  font-family: "Roboto";
+}
+
+.intro .explore {
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .tuto {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.restau {
+  padding: 1rem 1rem;
+  background: #f7f7f7;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card a {
+  margin: 1rem 0rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2.5px 0px 10px 2.5px #d4d4d4;
+          box-shadow: 2.5px 0px 10px 2.5px #d4d4d4;
+  text-decoration: none;
+  position: relative;
+}
+
+.card a img {
+  max-height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.card a .name {
+  margin-left: 1rem;
+  padding: 0.75rem 0rem;
+  color: black;
+}
+
+.card a .name i {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+}
+
+.card a .name h4 {
+  color: lightgray;
+}
+
+.card a .name p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #13614d;
+  background-color: #99E2D0;
+  padding: 0.25rem;
+}
+
+footer {
+  background: #3b3b3b;
+}
+
+footer h1 {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer a i {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

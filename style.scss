@@ -1,83 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: 'roboto', sans-serif;
-    src: url(/Roboto/Roboto-Regular.ttf);
-    font-family: 'Shrinkand', cursive;
-    src: url(/Shrikhand/Shrikhand-Regular.ttf);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
+
+
+$roboto: 'Roboto';
+$shrink:'Shrikhand';
+
 $lightgrey: #f7f7f7;
 
 
 body {
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-  }
+  font-family: $roboto;
+  height: 100vh;
+}
+h1{
+font-size: 20px;
+margin: 1rem;
+text-align: center;
+}
 
-  nav{
-    font-family: 'Shrikhand', cursive;
+h2{
+font-size: 15px;
+color: gray;
+font-weight: 100;
+text-align: center;
+margin-bottom: 1rem ;
+}
+
+h4{
+font-size: 15px;
+color: darkgray;
+font-weight: 100;
+}
+nav{
+  font-family: $shrink;
+  
+  h1{
+    font-size: 2rem;
   }
-.restau{
+}
+
+.maps{
+padding: 0.5rem 1rem;
+text-align: center;
+background: lightgray;
+box-shadow: 1px 8px 14px -7px rgba(0,0,0,0.75) inset;;
+}
+
+
+.intro{ 
+font-family: $roboto;
+
+.explore{
   padding: 1rem 1rem;
-    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.tuto{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+}
+.restau{
+padding: 1rem 1rem;
+  background: #f7f7f7;
 
 }
 
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-}
-   a{
-    margin: 1rem 0rem;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    box-shadow:  2.5px 0px 10px 2.5px rgb(212, 212, 212);
-    text-decoration: none;
-    position: relative;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
 
-      img{
-        max-height: 200px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0rem 0rem;
-      }
-      .name{
-        margin-left: 1rem;
-        padding: 0.75rem 0rem;
-        color: black;
-        
-      }
+a{
+  margin: 1rem 0rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow:  2.5px 0px 10px 2.5px rgb(212, 212, 212);
+  text-decoration: none;
+  position: relative;
+  
 
-      i{
+  img{
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+  .name{
+    margin-left: 1rem;
+    padding: 0.75rem 0rem;
+    color: black;
+      
+    & i{
         position: absolute;
         right: 25px;
         bottom: 20px;
-      }
+    }
 
-      h4{
+    & h4{
         color: lightgray;
         
-      }
+    }
 
-      p{
+    & p{
         position: absolute;
         top: 20px;
         right: 20px;
         color: #13614d;
         background-color: #99E2D0;
         padding: 0.25rem;
-      }
+    }
+  }
+}
+}
 
 footer{
-  background: #3b3b3b;
+background: #3b3b3b;
+
+h1{
+  font-family: $shrink;
   color: white;
+  font-size: 2rem
+}
+
+a{
+color: white;
+text-decoration: none;
+margin-left: 1rem;
+display: flex;
+flex-direction: column;
+
+  i{
+    margin-right: 10px;
+  }
+}
+
+
 }
