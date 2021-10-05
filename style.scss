@@ -4,171 +4,217 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap');
-
-
-$roboto: 'Roboto';
-$shrink:'Shrikhand';
+$roboto: "Roboto";
+$shrink: "Shrikhand";
 
 $lightgrey: #f7f7f7;
-
+$violet: #9356dc;
+$rose: #ff79da;
+$vert: #99e2d0;
+$grey: rgb(83, 83, 83);
 
 body {
   font-family: $roboto;
   height: 100vh;
 }
-h1{
-font-size: 20px;
-margin: 1rem;
-text-align: center;
+h1 {
+  font-size: 20px;
+  margin: 1rem;
+  text-align: center;
 }
 
-h2{
-font-size: 15px;
-color: gray;
-font-weight: 100;
-text-align: center;
-margin-bottom: 1rem ;
+h2 {
+  font-size: 17px;
+  color: rgb(71, 71, 71);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-h4{
-font-size: 15px;
-color: darkgray;
-font-weight: 100;
+h4 {
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+  font-weight: 400;
 }
-nav{
+nav {
   font-family: $shrink;
-  
-  h1{
+
+  h1 {
     font-size: 2rem;
   }
 }
 
-.maps{
-padding: 0.5rem 1rem;
-text-align: center;
-background: #f7f7f7;
-box-shadow: 2px 37px 62px -6px  rgba(0,0,0,0.4) inset;
+.maps {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background: #e2e2e2;
+  box-shadow: -2px 5px 5px -2px rgba(0, 0, 0, 0.288) inset;
+
+  i {
+    padding: 0rem 0.5rem;
+  }
 }
 
+.intro {
+  font-family: $roboto;
 
-.intro{ 
-font-family: $roboto;
+  .explore {
+    background: #f7f7f7;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  .explore{
-      background: #f7f7f7;
-      padding: 1rem 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      button{
-        color: white;
-        font-weight: 400;
-        padding: 0.5rem 0.5rem;
-        border-radius: 4rem;
-        border: none;
-        box-shadow: 2px 15px 37px -5px rgba(0,0,0,0.4);
-        background:linear-gradient(to bottom, #CE67CB 0%, #992B79 88%, #9B0B80 100%);
-      }
-
+    button {
+      color: white;
+      font-weight: 400;
+      padding: 0.75rem 1rem;
+      border-radius: 4rem;
+      border: none;
+      box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.4);
+      background: linear-gradient(to bottom, $rose 0%, $violet 100%);
+    }
   }
-  .tuto{
+  .tuto {
     text-align: center;
     margin-bottom: 1rem;
 
-    li{
-      font-size: 12px;
+    h1 {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    ul {
+      #violet {
+        background: #9256dc1e;
+        i {
+          color: $violet;
+        }
+      }
+    }
+
+    li {
+      color: grey;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
       font-weight: bold;
-      padding: 0.5rem 0rem;
-      margin: 1rem 4rem;
+      padding: 1.5rem 1rem;
+      margin: 1rem 1rem;
       margin-bottom: 0.5rem;
-      border-radius: 0.75rem;
-      background: #f7f7f7;
-      box-shadow: 5px -1px 12px 1px rgba(0,0,0,0.45);
+      border-radius: 1.5rem;
+      background: #f8f7f7;
+      box-shadow: 2px 3px 10px 1px rgb(194, 193, 193);
+
+      p {
+        color: white;
+        position: absolute;
+        left: 0.5rem;
+        background: $violet;
+        border-radius: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding-top: 0.2rem;
+      }
+      i {
+        padding: 0rem 2rem;
+      }
+      text {
+        color: black;
+      }
     }
   }
 }
-.restau{
-padding: 1rem 1rem;
+.restau {
+  padding: 1rem 1rem;
   background: #f7f7f7;
 
+  h1 {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
 
-a{
-  margin: 1rem 0rem;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 1rem;
-  box-shadow:  2.5px 0px 10px 2.5px rgb(212, 212, 212);
-  text-decoration: none;
-  position: relative;
-  
+  a {
+    margin: 1rem 0rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 2.5px 0px 10px 2.5px rgb(212, 212, 212);
+    text-decoration: none;
+    position: relative;
 
-  img{
-    max-height: 200px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0rem 0rem;
-  }
-  .name{
-    margin-left: 1rem;
-    padding: 0.75rem 0rem;
-    color: black;
-      
-    & i{
+    img {
+      max-height: 200px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0rem 0rem;
+    }
+    .name {
+      margin-left: 1rem;
+      padding: 0.75rem 0rem;
+      color: black;
+
+      i {
         position: absolute;
         right: 25px;
         bottom: 20px;
-    }
+        font-size: 25px;
+        color: grey;
+      }
 
-    & h4{
-        color: lightgray;
-        
-    }
-
-    & p{
+      & p {
         position: absolute;
         top: 20px;
         right: 20px;
         color: #13614d;
-        background-color: #99E2D0;
+        background-color: #99e2d0;
         padding: 0.25rem;
+        border-radius: 0.1rem;
+      }
     }
   }
 }
-}
 
-footer{
-background: #3b3b3b;
+footer {
+  background: #3b3b3b;
+  font-size: 15px;
 
-
-h1{
-  font-family: $shrink;
-  color: white;
-  font-size: 2rem
-}
-
-a{
-color: white;
-text-decoration: none;
-margin-left: 1rem;
-display: flex;
-flex-direction: column;
-padding-bottom: 0.5rem;
-
-  i{
-    margin-right: 10px;
+  h1 {
+    font-family: $shrink;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0rem;
+    padding-top: 1rem;
   }
-}
 
+  a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
 
+    p {
+      font-weight: bold;
+    }
+    i {
+      margin-right: 10px;
+      width: 1rem;
+    }
+  }
 }
