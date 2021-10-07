@@ -273,38 +273,37 @@ nav {
     list-style: none;
     font-size: 15px;
     font-weight: bold;
-    padding: 0.5rem 0.5rem;
+
     margin: 1rem 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 0.75rem;
     background: white;
     box-shadow: 2px 3px 10px 1px rgb(194, 193, 193);
-    position: relative;
     overflow: hidden;
 
     .recap {
       display: block;
       flex-grow: 1;
-      width: 15rem;
+      width: 1rem;
+      height: 60px;
 
       h1 {
+        display: block;
+        text-align: left;
         font-size: 17px;
+        margin: 0.5rem;
+        margin-right: 0rem;
         font-weight: bold;
         color: black;
-        margin: 0rem;
-        display: flex;
-        justify-content: flex-start;
-        border-bottom: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       h2 {
         font-size: 15px;
-        margin: 0rem;
-        margin-top: 5px;
-        transition: transform 330ms ease-in-out;
-        display: flex;
-        justify-content: flex-start;
-        display: block;
+        margin-left: 0.5rem;
+        text-align: left;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -312,30 +311,30 @@ nav {
     }
 
     .price {
-      display: block;
-      width: 4rem;
-      margin-top: 10px;
+      width: 2em;
+      margin-top: 38px;
+      height: 20px;
       color: black;
       font-weight: bold;
-      padding-right: 1rem;
-      transition: transform 330ms ease-in-out;
     }
 
-    span {
-      background: $vert;
-      font-size: 20px;
-      padding: 20px 20px;
-      border-radius: 0rem 0.75rem 0.75rem 0rem;
-      position: absolute;
-      right: -4rem;
-      bottom: 0rem;
+    .anim {
+      display: flex;
+      width: 0rem;
+      padding-left: 1rem;
+      transition: all 1s;
 
-      transition: transform 330ms ease-in-out;
+      .icon {
+        background: $vert;
+        font-size: 20px;
+        padding: 20px 20px;
+        border-radius: 0rem 0.75rem 0.75rem 0rem;
 
-      i {
-        color: white;
-        rotate: -360deg;
-        transition: transform 330ms ease-in-out;
+        i {
+          color: white;
+          transition: transform 1s ease-in-out;
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -347,15 +346,12 @@ nav {
 }
 
 li:hover {
-  span {
-    transform: translatex(-4rem);
-
-    i {
-      transform: rotate(360deg);
+  .anim {
+    width: 4.7rem;
+    .icon {
+      i {
+        transform: rotate(0deg);
+      }
     }
-  }
-
-  .price {
-    transform: translatex(-4rem);
   }
 }
