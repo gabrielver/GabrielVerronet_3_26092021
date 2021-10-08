@@ -60,7 +60,7 @@ nav {
 .maps {
   display: flex;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   background: #e2e2e2;
   box-shadow: -2px 5px 5px -2px rgba(0, 0, 0, 0.288) inset;
@@ -126,7 +126,7 @@ nav {
       i {
         padding: 0rem 2rem;
       }
-      text {
+      cite {
         color: black;
       }
     }
@@ -222,6 +222,7 @@ footer {
 
 nav {
   i {
+    color: black;
     font-size: 20px;
     position: absolute;
     top: 2rem;
@@ -238,6 +239,7 @@ nav {
     font-family: $shrink;
     background: $lightgrey;
     width: 100%;
+    padding-bottom: 4px;
     position: absolute;
     top: 17rem;
     border-radius: 2rem 2rem 0rem 0rem;
@@ -255,7 +257,6 @@ nav {
 }
 .menu {
   background: #f7f7f7;
-  padding-top: 4rem;
 
   h1 {
     display: flex;
@@ -266,6 +267,9 @@ nav {
     span {
       border-bottom: solid 3px $vert;
     }
+  }
+  ul {
+    margin-bottom: 3rem;
   }
   li {
     display: flex;
@@ -322,7 +326,7 @@ nav {
       display: flex;
       width: 0rem;
       padding-left: 1rem;
-      transition: all 1s;
+      transition: all 0.5s;
 
       .icon {
         background: $vert;
@@ -332,16 +336,21 @@ nav {
 
         i {
           color: white;
-          transition: transform 1s ease-in-out;
+          transition: transform 0.5s ease-in-out;
           transform: rotate(-360deg);
         }
       }
     }
   }
   .bouton {
-    padding: 2rem 0rem;
+    padding: 0rem 0rem 3rem 0rem;
     display: flex;
     justify-content: center;
+    button {
+      width: 60%;
+      padding: 1rem 0rem;
+      font-size: 17px;
+    }
   }
 }
 

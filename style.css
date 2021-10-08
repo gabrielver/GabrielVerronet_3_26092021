@@ -58,7 +58,7 @@ nav h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   background: #e2e2e2;
   -webkit-box-shadow: -2px 5px 5px -2px rgba(0, 0, 0, 0.288) inset;
@@ -148,7 +148,7 @@ nav h1 {
   padding: 0rem 2rem;
 }
 
-.intro .tuto li text {
+.intro .tuto li cite {
   color: black;
 }
 
@@ -270,6 +270,7 @@ footer a i {
 }
 
 nav i {
+  color: black;
   font-size: 20px;
   position: absolute;
   top: 2rem;
@@ -287,6 +288,7 @@ nav i {
   font-family: "Shrikhand";
   background: #f7f7f7;
   width: 100%;
+  padding-bottom: 4px;
   position: absolute;
   top: 17rem;
   border-radius: 2rem 2rem 0rem 0rem;
@@ -310,7 +312,6 @@ nav i {
 
 .menu {
   background: #f7f7f7;
-  padding-top: 4rem;
 }
 
 .menu h1 {
@@ -326,6 +327,10 @@ nav i {
 
 .menu h1 span {
   border-bottom: solid 3px #99e2d0;
+}
+
+.menu ul {
+  margin-bottom: 3rem;
 }
 
 .menu li {
@@ -390,8 +395,8 @@ nav i {
   display: flex;
   width: 0rem;
   padding-left: 1rem;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .menu li .anim .icon {
@@ -403,22 +408,28 @@ nav i {
 
 .menu li .anim .icon i {
   color: white;
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
 .menu .bouton {
-  padding: 2rem 0rem;
+  padding: 0rem 0rem 3rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu .bouton button {
+  width: 60%;
+  padding: 1rem 0rem;
+  font-size: 17px;
 }
 
 li:hover .anim {
