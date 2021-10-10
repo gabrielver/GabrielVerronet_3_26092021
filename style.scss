@@ -271,19 +271,68 @@ nav {
   ul {
     margin-bottom: 3rem;
   }
+
+  .choice1 {
+    animation-name: choice1;
+    animation-duration: 1.5s;
+  }
+  .choice2 {
+    animation-name: choice2;
+    animation-duration: 2.5s;
+  }
+  .choice3 {
+    animation-name: choice3;
+    animation-duration: 3.5s;
+  }
   li {
     display: flex;
     color: black;
     list-style: none;
     font-size: 15px;
     font-weight: bold;
-
     margin: 1rem 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 0.75rem;
     background: white;
     box-shadow: 2px 3px 10px 1px rgb(194, 193, 193);
     overflow: hidden;
+
+    @keyframes choice1 {
+      0% {
+        margin-bottom: 5rem;
+        opacity: 0;
+      }
+      75% {
+        margin-bottom: 0.5rem;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes choice2 {
+      0% {
+        margin-bottom: 5rem;
+        opacity: 0;
+      }
+      75% {
+        margin-bottom: 0.5rem;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes choice3 {
+      0% {
+        margin-bottom: 5rem;
+        opacity: 0;
+      }
+      75% {
+        margin-bottom: 0.5rem;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
 
     .recap {
       display: block;
@@ -342,6 +391,7 @@ nav {
       }
     }
   }
+
   .bouton {
     padding: 0rem 0rem 3rem 0rem;
     display: flex;

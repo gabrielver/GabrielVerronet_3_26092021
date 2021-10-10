@@ -333,6 +333,27 @@ nav i {
   margin-bottom: 3rem;
 }
 
+.menu .choice1 {
+  -webkit-animation-name: choice1;
+          animation-name: choice1;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.menu .choice2 {
+  -webkit-animation-name: choice2;
+          animation-name: choice2;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+.menu .choice3 {
+  -webkit-animation-name: choice3;
+          animation-name: choice3;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+}
+
 .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,6 +369,84 @@ nav i {
   -webkit-box-shadow: 2px 3px 10px 1px #c2c1c1;
           box-shadow: 2px 3px 10px 1px #c2c1c1;
   overflow: hidden;
+}
+
+@-webkit-keyframes choice1 {
+  0% {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  75% {
+    margin-bottom: 0.5rem;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes choice1 {
+  0% {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  75% {
+    margin-bottom: 0.5rem;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes choice2 {
+  0% {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  75% {
+    margin-bottom: 0.5rem;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes choice2 {
+  0% {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  75% {
+    margin-bottom: 0.5rem;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes choice3 {
+  0% {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  75% {
+    margin-bottom: 0.5rem;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes choice3 {
+  0% {
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  75% {
+    margin-bottom: 0.5rem;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu li .recap {
