@@ -42,6 +42,14 @@ button {
           box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.4);
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+  cursor: pointer;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79d9cb), to(#9256dcbb));
+  background: linear-gradient(to bottom, #ff79d9cb 0%, #9256dcbb 100%);
+  -webkit-box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.616);
+          box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.616);
 }
 
 /*index*/
@@ -91,6 +99,10 @@ nav h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intro .explore button {
+  margin: 1rem 0rem;
 }
 
 .intro .tuto {

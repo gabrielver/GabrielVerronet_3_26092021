@@ -12,6 +12,8 @@ $shrink: "Shrikhand";
 $lightgrey: #f7f7f7;
 $violet: #9356dc;
 $rose: #ff79da;
+$violetP: #9256dcbb;
+$roseP: #ff79d9cb;
 $vert: #99e2d0;
 $grey: rgb(83, 83, 83);
 
@@ -49,6 +51,12 @@ button {
   border: none;
   box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.4);
   background: linear-gradient(to bottom, $rose 0%, $violet 100%);
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to bottom, $roseP 0%, $violetP 100%);
+    box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.616);
+  }
 }
 
 /*index*/
@@ -84,6 +92,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    button {
+      margin: 1rem 0rem;
+    }
   }
   .tuto {
     text-align: center;
