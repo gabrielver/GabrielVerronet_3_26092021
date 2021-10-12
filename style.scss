@@ -159,7 +159,6 @@ nav {
 
     img {
       max-height: 200px;
-      width: 100%;
       object-fit: cover;
       border-radius: 1rem 1rem 0rem 0rem;
     }
@@ -173,7 +172,6 @@ nav {
         right: 25px;
         bottom: 20px;
         font-size: 25px;
-        color: grey;
       }
 
       & p {
@@ -411,6 +409,60 @@ li:hover {
       i {
         transform: rotate(0deg);
       }
+    }
+  }
+}
+
+@media screen and (min-width: 763px) {
+  .intro .tuto {
+    h1 {
+      justify-content: center;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        width: 28%;
+        padding: 2%;
+        i {
+          padding: 0rem 10%;
+        }
+        p {
+          position: relative;
+          left: -30px;
+        }
+      }
+    }
+  }
+  .card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+      margin: 1rem;
+
+      img {
+        height: fit-content;
+      }
+    }
+  }
+
+  footer {
+    h1 {
+      font-size: 25px;
+    }
+    .foot {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem 0.5rem;
     }
   }
 }
