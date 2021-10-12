@@ -6,6 +6,7 @@
           box-sizing: border-box;
 }
 
+/*general*/
 body {
   font-family: "Roboto";
   height: 100vh;
@@ -43,6 +44,7 @@ button {
   background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
 }
 
+/*index*/
 nav {
   font-family: "Shrikhand";
 }
@@ -267,6 +269,7 @@ footer a i {
   width: 1rem;
 }
 
+/*la palette du gout + 3 autres*/
 nav i {
   color: black;
   font-size: 20px;
@@ -538,7 +541,8 @@ li:hover .anim .icon i {
           transform: rotate(0deg);
 }
 
-@media screen and (min-width: 763px) {
+@media screen and (min-width: 814px) {
+  /*index*/
   .intro .tuto h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -591,18 +595,62 @@ li:hover .anim .icon i {
     height: fit-content;
   }
   footer h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   footer .foot {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem 0.5rem;
+  }
+  footer .foot a {
+    width: 25%;
+  }
+  /*la palette du gout + 3 autres*/
+  .title .title1 {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .title .title1 h1 {
+    margin-right: 4rem;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .menu .entrees,
+  .menu .plats,
+  .menu .desserts {
+    width: 35%;
+  }
+  .menu .entrees li h1,
+  .menu .plats li h1,
+  .menu .desserts li h1 {
+    font-size: 16px;
+  }
+  .menu .entrees li h2,
+  .menu .plats li h2,
+  .menu .desserts li h2 {
+    font-size: 14px;
+  }
+  .menu .bouton {
+    position: absolute;
+    bottom: 1px;
+    left: 25%;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

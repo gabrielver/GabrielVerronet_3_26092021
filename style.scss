@@ -15,6 +15,8 @@ $rose: #ff79da;
 $vert: #99e2d0;
 $grey: rgb(83, 83, 83);
 
+/*general*/
+
 body {
   font-family: $roboto;
   height: 100vh;
@@ -48,6 +50,8 @@ button {
   box-shadow: 2px 15px 37px -5px rgba(0, 0, 0, 0.4);
   background: linear-gradient(to bottom, $rose 0%, $violet 100%);
 }
+
+/*index*/
 
 nav {
   font-family: $shrink;
@@ -217,6 +221,8 @@ footer {
     }
   }
 }
+
+/*la palette du gout + 3 autres*/
 
 nav {
   i {
@@ -413,7 +419,9 @@ li:hover {
   }
 }
 
-@media screen and (min-width: 763px) {
+@media screen and (min-width: 814px) {
+  /*index*/
+
   .intro .tuto {
     h1 {
       justify-content: center;
@@ -456,13 +464,55 @@ li:hover {
 
   footer {
     h1 {
-      font-size: 25px;
+      font-size: 30px;
     }
     .foot {
       display: flex;
-      justify-content: space-around;
+      justify-content: start;
+
       align-items: center;
       padding: 1rem 0.5rem;
+
+      a {
+        width: 25%;
+      }
+    }
+  }
+
+  /*la palette du gout + 3 autres*/
+
+  .title .title1 {
+    justify-content: left;
+    h1 {
+      margin-right: 4rem;
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    padding-bottom: 5rem;
+
+    .entrees,
+    .plats,
+    .desserts {
+      width: 35%;
+
+      li {
+        h1 {
+          font-size: 16px;
+        }
+        h2 {
+          font-size: 14px;
+        }
+      }
+    }
+    .bouton {
+      position: absolute;
+      bottom: 1px;
+      left: 25%;
+      width: 50%;
     }
   }
 }
