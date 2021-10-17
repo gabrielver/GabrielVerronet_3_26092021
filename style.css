@@ -221,13 +221,52 @@ nav h1 {
   margin-left: 1rem;
   padding: 0.75rem 0rem;
   color: black;
+  /*i {
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        font-size: 25px;
+      }*/
 }
 
-.card a .name i {
+.card a .name .like-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 2;
+}
+
+.card a .name .fa-heart {
   position: absolute;
   right: 25px;
   bottom: 20px;
   font-size: 25px;
+  -webkit-text-stroke: 2px #e5e5e5;
+  color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.card a .name .like-btn:hover + .fa-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
+  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+.card a .name .like-btn:checked + .fa-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
+  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px;
 }
 
 .card a .name p {
