@@ -222,13 +222,7 @@ nav {
           -webkit-text-stroke: 0px;
             
         }
-      /*i {
-        position: absolute;
-        right: 25px;
-        bottom: 20px;
-        font-size: 25px;
-      }*/
-
+      
       & p {
         position: absolute;
         top: 20px;
@@ -352,6 +346,23 @@ nav {
     box-shadow: 2px 3px 10px 1px rgb(194, 193, 193);
     overflow: hidden;
 
+    input {
+      display: none;
+    }
+    .checkon{
+    display: flex;
+    width: 100%;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+    border-radius: 0.75rem;
+    background: white;
+    box-shadow: 2px 3px 10px 1px rgb(194, 193, 193);
+    overflow: hidden;
+    }
+
     @keyframes choice1 {
       0% {
         margin-bottom: 5rem;
@@ -459,6 +470,17 @@ nav {
   }
 }
 
+:checked + .checkon{
+  .anim {
+    width: 4.7rem;
+    .icon {
+      i {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
 li:hover {
   .anim {
     width: 4.7rem;
@@ -469,6 +491,8 @@ li:hover {
     }
   }
 }
+
+
 
 @media screen and (min-width: 814px) {
   /*index*/

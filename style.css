@@ -221,12 +221,6 @@ nav h1 {
   margin-left: 1rem;
   padding: 0.75rem 0rem;
   color: black;
-  /*i {
-        position: absolute;
-        right: 25px;
-        bottom: 20px;
-        font-size: 25px;
-      }*/
 }
 
 .card a .name .like-btn {
@@ -423,6 +417,27 @@ nav i {
   overflow: hidden;
 }
 
+.menu li input {
+  display: none;
+}
+
+.menu li .checkon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: black;
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  border-radius: 0.75rem;
+  background: white;
+  -webkit-box-shadow: 2px 3px 10px 1px #c2c1c1;
+          box-shadow: 2px 3px 10px 1px #c2c1c1;
+  overflow: hidden;
+}
+
 @-webkit-keyframes choice1 {
   0% {
     margin-bottom: 5rem;
@@ -581,6 +596,15 @@ nav i {
   width: 60%;
   padding: 1rem 0rem;
   font-size: 17px;
+}
+
+:checked + .checkon .anim {
+  width: 4.7rem;
+}
+
+:checked + .checkon .anim .icon i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 li:hover .anim {
