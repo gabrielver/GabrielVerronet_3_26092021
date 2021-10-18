@@ -235,6 +235,7 @@ nav {
   .like-btn:hover + .fa-heart{
     background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0px;
       
@@ -243,6 +244,7 @@ nav {
     .like-btn:checked + .fa-heart{
       background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
       background-clip: text;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 0px;
         
@@ -345,6 +347,7 @@ nav {
     .like-btn:hover + .fa-heart{
       background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
       background-clip: text;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 0px;
         
@@ -353,6 +356,7 @@ nav {
       .like-btn:checked + .fa-heart{
         background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0px;
           

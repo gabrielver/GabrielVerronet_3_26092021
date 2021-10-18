@@ -274,6 +274,7 @@ nav h1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
 }
@@ -282,6 +283,7 @@ nav h1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
 }
@@ -397,6 +399,7 @@ nav p {
   background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
 }
@@ -405,6 +408,7 @@ nav p {
   background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
   background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px;
 }
