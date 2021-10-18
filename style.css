@@ -74,7 +74,7 @@ nav h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   text-align: center;
   background: #e2e2e2;
   -webkit-box-shadow: -2px 5px 5px -2px rgba(0, 0, 0, 0.288) inset;
@@ -82,7 +82,7 @@ nav h1 {
 }
 
 .maps i {
-  padding: 0rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .intro {
@@ -162,6 +162,8 @@ nav h1 {
   width: 1.5rem;
   height: 1.5rem;
   padding-top: 0.2rem;
+  margin: 0;
+  font-size: initial;
 }
 
 .intro .tuto li i {
@@ -199,7 +201,11 @@ nav h1 {
           justify-content: center;
 }
 
-.card a {
+.card .cards {
+  position: relative;
+}
+
+.card .cards a {
   margin: 1rem 0rem;
   background: white;
   display: -webkit-box;
@@ -216,60 +222,20 @@ nav h1 {
   position: relative;
 }
 
-.card a img {
+.card .cards a img {
   max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.card a .name {
+.card .cards a .name {
   margin-left: 1rem;
   padding: 0.75rem 0rem;
   color: black;
 }
 
-.card a .name .like-btn {
-  position: absolute;
-  right: 25px;
-  bottom: 20px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  z-index: 2;
-}
-
-.card a .name .fa-heart {
-  position: absolute;
-  right: 25px;
-  bottom: 20px;
-  font-size: 25px;
-  -webkit-text-stroke: 2px #3a3a3a;
-  color: white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.card a .name .like-btn:hover + .fa-heart {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
-  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px;
-}
-
-.card a .name .like-btn:checked + .fa-heart {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
-  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px;
-}
-
-.card a .name p {
+.card .cards a .name p {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -277,6 +243,47 @@ nav h1 {
   background-color: #99e2d0;
   padding: 0.25rem;
   border-radius: 0.1rem;
+  margin: 0;
+}
+
+.card .cards .like-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 35px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 2;
+}
+
+.card .cards .fa-heart {
+  position: absolute;
+  right: 25px;
+  bottom: 35px;
+  font-size: 25px;
+  -webkit-text-stroke: 2px #3a3a3a;
+  color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.card .cards .like-btn:hover + .fa-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
+  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px;
+}
+
+.card .cards .like-btn:checked + .fa-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a73dfd), to(#f16eca));
+  background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px;
 }
 
 footer {
@@ -314,6 +321,9 @@ footer a {
 
 footer a p {
   font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  text-align: start;
 }
 
 footer a i {
@@ -707,16 +717,10 @@ li:hover .anim .icon i {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
   }
-  .card .card1,
-  .card .card2,
-  .card .card3,
-  .card .card4 {
+  .card .cards {
     margin: 1rem;
   }
-  .card .card1 img,
-  .card .card2 img,
-  .card .card3 img,
-  .card .card4 img {
+  .card .cards img {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

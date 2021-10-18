@@ -78,13 +78,13 @@ nav {
 .maps {
   display: flex;
   justify-content: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   text-align: center;
   background: #e2e2e2;
   box-shadow: -2px 5px 5px -2px rgba(0, 0, 0, 0.288) inset;
 
   i {
-    padding: 0rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -144,6 +144,8 @@ nav {
         width: 1.5rem;
         height: 1.5rem;
         padding-top: 0.2rem;
+        margin: 0;
+        font-size: initial;
       }
       i {
         padding: 0rem 2rem;
@@ -169,6 +171,9 @@ nav {
   flex-direction: column;
   justify-content: center;
 
+  .cards{
+    position: relative;
+  
   a {
     margin: 1rem 0rem;
     background: white;
@@ -189,45 +194,7 @@ nav {
       padding: 0.75rem 0rem;
       color: black;
       
-      .like-btn {
-        position: absolute;
-        right: 25px;
-        bottom: 20px;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all 0.5s;
-        opacity: 0;
-        z-index: 2;
-        
-       
-      }
       
-      .fa-heart{
-        position: absolute;
-        right: 25px;
-        bottom: 20px;
-        font-size: 25px;
-        -webkit-text-stroke: 2px rgb(58, 58, 58);
-        color: white;
-        transition: all 0.5s ease-in-out;
-      
-      }
-      .like-btn:hover + .fa-heart{
-        background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 0px;
-          
-      }
-      
-        .like-btn:checked + .fa-heart{
-          background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 0px;
-            
-        }
       
       & p {
         position: absolute;
@@ -237,7 +204,48 @@ nav {
         background-color: #99e2d0;
         padding: 0.25rem;
         border-radius: 0.1rem;
+        margin: 0;
       }
+    }
+  }
+  .like-btn {
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 2;
+    
+   
+  }
+  
+  .fa-heart{
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+    font-size: 25px;
+    -webkit-text-stroke: 2px rgb(58, 58, 58);
+    color: white;
+    transition: all 0.5s ease-in-out;
+  
+  }
+  .like-btn:hover + .fa-heart{
+    background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px;
+      
+  }
+  
+    .like-btn:checked + .fa-heart{
+      background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0px;
+        
     }
   }
 }
@@ -267,6 +275,10 @@ footer {
 
     p {
       font-weight: bold;
+      font-size: 15px;
+      margin: 0;
+      text-align: start;
+
     }
     i {
       margin-right: 10px;
@@ -573,18 +585,16 @@ li:hover {
       }
     }
   }
+
   .card {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    .card1,
-    .card2,
-    .card3,
-    .card4 {
+    .cards{
       margin: 1rem;
-
+    
       img {
         height: fit-content;
       }

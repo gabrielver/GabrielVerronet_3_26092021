@@ -12,169 +12,200 @@
 <body>
     <nav>
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-        <h1>ohmyfood</h1>
+        <p>ohmyfood</p>
     </nav>
-    <div class="title">
-        <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-        <div class="title1">
-            <h1>la palette du goût</h1>
-            <i class="far fa-heart"></i>
+    <main>
+        <div class="title">
+            <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+            <div class="title1">
+                <p>La palette du goût</p>
+                <input type="checkbox" class="like-btn">
+                    <i class="fas fa-heart"></i>
+            </div>
         </div>
-    </div>
-    <div class="menu">
-        <div class="entrees">
-            <h1><span>ENTR</span>EES</h1>
-            <ul>
-                <li class="choice1" >
-                    <div class="recap">
-                        <h1>Fricassée d'escargot</h1>
-                        <h2>Au piment d'espelette</h2>
-                    </div>
-                    <div class="price">
-                        <p>25€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="choice2">
-                    <div class="recap">
-                        <h1>Foie gras de canard mi-cuit</h1>
-                        <h2>Et ses copeaux de truffe noire</h2>
-                    </div>
-                    <div class="price">
-                        <p>35€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="choice3">
-                    <div class="recap">
-                        <h1>Oeuf au plat</h1>
-                        <h2>Assaisonné à la truffe sur lit de caviar</h2>
-                    </div>
-                    <div class="price">
-                        <p>20€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <div class="menu">
+            <div class="entrees">
+                <p><span>ENTR</span>ÉES</p>
+                <ul>
+                    <li class="choice1" >
+                        <input type="checkbox" id="check1">
+                        <label class="checkon" for="check1">
+                    
+                        <span class="recap">
+                            <span class="h1">Fricassée d'escargot</span>
+                            <span class="h2">Au piment d'Espelette </span>
+                        </span>
+                        <span class="price">
+                            <span>25€</span>
+                        </span>
+                        <span class="anim">
+                            <span class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </span>
+                        </span>
+                    </label>
+                    </li>
+                    <li class="choice2">
+                        <input type="checkbox" id="check2">
+                        <label class="checkon" for="check2">
+                        <span class="recap">
+                            <span class="h1">Foie gras de canard mi-cuit</span>
+                            <span class="h2">Et ses copeaux de truffe noire</span>
+                        </span>
+                        <span class="price">
+                            <span>35€</span>
+                        </span>
+                        <span class="anim">
+                            <span class="icon">
+                                <i class="fas fa-check-circle"></i>
+                            </span>
+                        </span>
+                    </label>
+                    </li>
+                    <li class="choice3">
+                        <input type="checkbox" id="check3">
+                        <label class="checkon" for="check3">
+                            <span class="recap">
+                                <span class="h1">Oeuf au plat</span>
+                                <span class="h2">Assaisonné à la truffe sur lit de caviar</span>
+                            </span>
+                            <span class="price">
+                                <span>20€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="plats">
+                <p><span>PLAT</span>S</p>
+                <ul>
+                    <li class="choice1">
+                        <input type="checkbox" id="check4">
+                        <label class="checkon" for="check4">
+                            <span class="recap">
+                                <span class="h1">Filet de boeuf aux herbes</span>
+                                <span class="h2">Accompagné de sa ribambelle de légumes</span>
+                            </span>
+                            <span class="price">
+                                <span>40€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li class="choice2">
+                        <input type="checkbox" id="check5">
+                        <label class="checkon" for="check5">
+                            <span class="recap">
+                                <span class="h1">Parmentier de queue de boeuf</span>
+                                <span class="h2">À la truffe noire sur sa purée de panais</span>
+                            </span>
+                            <span class="price">
+                                <span>35€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li class="choice3">
+                        <input type="checkbox" id="check6">
+                        <label class="checkon" for="check6">
+                            <span class="recap">
+                                <span class="h1">Filet de turbot</span>
+                                <span class="h2">Aux agrumes</span>
+                            </span>
+                            <span class="price">
+                                <span>44€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="desserts">
+                <p><span>DESS</span>ERTS</p>
+                <ul>
+                    <li class="choice1">
+                        <input type="checkbox" id="check7">
+                        <label class="checkon" for="check7">
+                            <span class="recap">
+                                <span class="h1">Paris-Brest</span>
+                                <span class="h2">Revisité</span>
+                            </span>
+                            <span class="price">
+                                <span>18€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li class="choice2">
+                        <input type="checkbox" id="check8">
+                        <label class="checkon" for="check8">
+                            <span class="recap">
+                                <span class="h1">Macaron au chocolat d'exception</span>
+                                <span class="h2">Et glace à la vanille de Madagascar</span>
+                            </span>
+                            <span class="price">
+                                <span>22€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                    <li class="choice3">
+                        <input type="checkbox" id="check9">
+                        <label class="checkon" for="check9">
+                            <span class="recap">
+                                <span class="h1">Mousse au chocolat</span>
+                                <span class="h2">Au piment d'Espelette et à la truffe noire</span>
+                            </span>
+                            <span class="price">
+                                <span>23€</span>
+                            </span>
+                            <span class="anim">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="bouton">
+                <button>Commander</button>
+            </div>
         </div>
-        <div class="plats">
-            <h1><span>PLAT</span>S</h1>
-            <ul>
-                <li class="choice1">
-                    <div class="recap">
-                        <h1>Filet de boeuf aux herbes</h1>
-                        <h2>Accompagné de sa ribambelle de légumes</h2>
-                    </div>
-                    <div class="price">
-                        <p>40€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="choice2">
-                    <div class="recap">
-                        <h1>Parmentier de queue de boeuf</h1>
-                        <h2>À la truffe noire sur sa purée de panais</h2>
-                    </div>
-                    <div class="price">
-                        <p>35€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="choice3">
-                    <div class="recap">
-                        <h1>Filet de turbot</h1>
-                        <h2>Aux agrumes</h2>
-                    </div>
-                    <div class="price">
-                        <p>44€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="desserts">
-            <h1><span>DESS</span>ERTS</h1>
-            <ul>
-                <li class="choice1">
-                    <div class="recap">
-                        <h1>Paris-Brest</h1>
-                        <h2>Revisité</h2>
-                    </div>
-                    <div class="price">
-                        <p>18€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="choice2">
-                    <div class="recap">
-                        <h1>Macaron au chocolat d'exception</h1>
-                        <h2>Et glace à la vanille de Madagascar</h2>
-                    </div>
-                    <div class="price">
-                        <p>22€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-                <li class="choice3">
-                    <div class="recap">
-                        <h1>Mousse au chocolat</h1>
-                        <h2>Au piment d'Espelette et à la truffe noire</h2>
-                    </div>
-                    <div class="price">
-                        <p>23€</p>
-                    </div>
-                    <div class="anim">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="bouton">
-            <button>Commander</button>
-        </div>
-    </div>
+    </main>
     <footer>
         <h1>ohmyfood</h1>
         <div class="foot">
             <a class="partner" href="">
-                <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+                <span><i class="fas fa-utensils"></i>Proposer un restaurant</span>
             </a>
             <a class="partner" href="">
-                <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+                <span><i class="fas fa-hands-helping"></i>Devenir partenaire</span>
             </a>
             <a href="">Mentions légales</a>
             <a href="ohmyfood@gmail.com">Contact</a>
