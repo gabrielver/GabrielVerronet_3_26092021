@@ -23,6 +23,12 @@ body {
   font-family: $roboto;
   height: 100vh;
 }
+
+p {
+  font-size: 20px;
+  margin: 1rem;
+  text-align: center;
+}
 h1 {
   font-size: 20px;
   margin: 1rem;
@@ -202,7 +208,7 @@ nav {
         right: 25px;
         bottom: 20px;
         font-size: 25px;
-        -webkit-text-stroke: 2px #e5e5e5;
+        -webkit-text-stroke: 2px rgb(58, 58, 58);
         color: white;
         transition: all 0.5s ease-in-out;
       
@@ -236,12 +242,14 @@ nav {
   }
 }
 
+
 footer {
   background: #3b3b3b;
   font-size: 15px;
 
   h1 {
     font-family: $shrink;
+    font-weight: normal;
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -276,6 +284,10 @@ nav {
     position: absolute;
     top: 2rem;
     left: 1rem;
+    
+  }
+  p{
+    font-size: 28px;
   }
 }
 .title {
@@ -288,26 +300,58 @@ nav {
     font-family: $shrink;
     background: $lightgrey;
     width: 100%;
-    padding-bottom: 4px;
+    
     position: absolute;
     top: 17rem;
     border-radius: 2rem 2rem 0rem 0rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    h1 {
+  p {
       font-size: 28px;
+      font-weight: normal;
+    }
+
+    .like-btn{
+      position: absolute;
+      right: 2rem;
+      width: 30px;
+      height: 25px;
+      opacity: 0;
+      cursor: pointer;
     }
     i {
-      font-size: 28px;
+      color: #f7f7f7;
+      font-size: 30px;
+      -webkit-text-stroke: 1.5px rgb(37, 37, 37);
+      margin-right: 2rem;
+      transition: all 0.5s ease-in-out;
     }
+
+    /*anim like button*/
+    .like-btn:hover + .fa-heart{
+      background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 0px;
+        
+    }
+    
+      .like-btn:checked + .fa-heart{
+        background: linear-gradient(180deg, #a73dfd 0%, #f16eca 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px;
+          
+      }
+
   }
 }
 .menu {
   background: #f7f7f7;
 
-  h1 {
+  p {
     display: flex;
     justify-content: start;
     font-weight: normal;
@@ -361,6 +405,9 @@ nav {
     background: white;
     box-shadow: 2px 3px 10px 1px rgb(194, 193, 193);
     overflow: hidden;
+    cursor: pointer;
+    
+    
     }
 
     @keyframes choice1 {
@@ -400,13 +447,16 @@ nav {
       }
     }
 
-    .recap {
-      display: block;
-      flex-grow: 1;
-      width: 1rem;
-      height: 60px;
+    .recap{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    
 
-      h1 {
+      .h1 {
         display: block;
         text-align: left;
         font-size: 17px;
@@ -419,8 +469,10 @@ nav {
         text-overflow: ellipsis;
       }
 
-      h2 {
+      .h2 {
         font-size: 15px;
+        font-weight: normal;
+        color: rgb(71, 71, 71);
         margin-left: 0.5rem;
         text-align: left;
         white-space: nowrap;
@@ -430,6 +482,7 @@ nav {
     }
 
     .price {
+      
       width: 2em;
       margin-top: 38px;
       height: 20px;
@@ -468,8 +521,9 @@ nav {
       font-size: 17px;
     }
   }
-}
 
+}
+/*anim checked button*/
 :checked + .checkon{
   .anim {
     width: 4.7rem;
@@ -560,6 +614,14 @@ li:hover {
     justify-content: left;
     h1 {
       margin-right: 4rem;
+    }
+    .like-btn{
+      position: absolute;
+      left: 293px;
+      width: 30px;
+      height: 25px;
+      opacity: 0;
+      
     }
   }
   .menu {
