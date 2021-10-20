@@ -215,6 +215,7 @@ nav h1 {
 .intro .explore button {
   position: relative;
   margin: 1rem 0rem;
+  font-weight: bold;
 }
 
 .intro .tuto {
@@ -229,7 +230,11 @@ nav h1 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-weight: bold;
+  font-weight: normal;
+}
+
+.intro .tuto cite {
+  font-style: normal;
 }
 
 .intro .tuto ul #violet {

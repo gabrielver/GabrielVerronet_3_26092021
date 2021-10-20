@@ -162,6 +162,7 @@ nav {
     button {
       position: relative;
       margin: 1rem 0rem;
+      font-weight: bold;
     }
   }
   .tuto {
@@ -171,7 +172,10 @@ nav {
     p {
       display: flex;
       justify-content: flex-start;
-      font-weight: bold;
+      font-weight: normal;
+    }
+    cite{
+      font-style: normal;
     }
 
     ul {
