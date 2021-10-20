@@ -160,6 +160,7 @@ nav {
      font-weight: bold; 
     }
     button {
+      position: relative;
       margin: 1rem 0rem;
     }
   }
@@ -320,6 +321,7 @@ nav {
 
 
 footer {
+  position: relative;
   background: #3b3b3b;
   font-size: 15px;
 
@@ -396,7 +398,7 @@ nav {
 
     .like-btn{
       position: absolute;
-      right: 2rem;
+      right: 2em;
       width: 30px;
       height: 25px;
       opacity: 0;
@@ -702,11 +704,14 @@ li:hover {
     }
     .like-btn{
       position: absolute;
-      left: 293px;
+      left: 331px;
       width: 30px;
       height: 25px;
       opacity: 0;
       
+    }
+    #alafrancaise{
+      left: 275px;
     }
   }
   .menu {

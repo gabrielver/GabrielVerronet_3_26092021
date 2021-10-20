@@ -213,6 +213,7 @@ nav h1 {
 }
 
 .intro .explore button {
+  position: relative;
   margin: 1rem 0rem;
 }
 
@@ -404,6 +405,7 @@ nav h1 {
 }
 
 footer {
+  position: relative;
   background: #3b3b3b;
   font-size: 15px;
 }
@@ -496,7 +498,7 @@ nav p {
 
 .title .title1 .like-btn {
   position: absolute;
-  right: 2rem;
+  right: 2em;
   width: 30px;
   height: 25px;
   opacity: 0;
@@ -878,10 +880,13 @@ li:hover .anim .icon i {
   }
   .title .title1 .like-btn {
     position: absolute;
-    left: 293px;
+    left: 331px;
     width: 30px;
     height: 25px;
     opacity: 0;
+  }
+  .title .title1 #alafrancaise {
+    left: 275px;
   }
   .menu {
     display: -webkit-box;
