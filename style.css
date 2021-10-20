@@ -78,7 +78,7 @@ nav h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 2000%;
+  font-size: 400px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -86,6 +86,7 @@ nav h1 {
   color: white;
   -webkit-animation: spin 3s;
           animation: spin 3s;
+  z-index: 0;
 }
 
 .spinner i {
@@ -105,6 +106,7 @@ nav h1 {
 
 @-webkit-keyframes spin {
   0% {
+    z-index: 1000;
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79d9cb), to(#9256dcbb));
     background: linear-gradient(to bottom, #ff79d9cb 0%, #9256dcbb 100%);
@@ -118,6 +120,7 @@ nav h1 {
 
 @keyframes spin {
   0% {
+    z-index: 1000;
     opacity: 1;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79d9cb), to(#9256dcbb));
     background: linear-gradient(to bottom, #ff79d9cb 0%, #9256dcbb 100%);
@@ -205,6 +208,10 @@ nav h1 {
           align-items: center;
 }
 
+.intro .explore p {
+  font-weight: bold;
+}
+
 .intro .explore button {
   margin: 1rem 0rem;
 }
@@ -214,13 +221,14 @@ nav h1 {
   margin-bottom: 1rem;
 }
 
-.intro .tuto h1 {
+.intro .tuto p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  font-weight: bold;
 }
 
 .intro .tuto ul #violet {
@@ -254,6 +262,12 @@ nav h1 {
 .intro .tuto li p {
   color: white;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 0.5rem;
   background: #9356dc;
   border-radius: 1rem;
@@ -277,13 +291,15 @@ nav h1 {
   background: #f7f7f7;
 }
 
-.restau h1 {
+.restau p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  font-weight: bold;
+  margin-left: 0;
 }
 
 .card {
@@ -338,6 +354,7 @@ nav h1 {
   top: 20px;
   right: 20px;
   color: #13614d;
+  font-weight: normal;
   background-color: #99e2d0;
   padding: 0.25rem;
   border-radius: 0.1rem;
@@ -471,7 +488,9 @@ nav p {
 }
 
 .title .title1 p {
-  font-size: 28px;
+  padding-top: 2px;
+  margin-left: 1rem;
+  font-size: 27px;
   font-weight: normal;
 }
 
@@ -513,9 +532,10 @@ nav p {
 
 .menu {
   background: #f7f7f7;
+  padding: 0rem 0.5rem;
 }
 
-.menu p {
+.menu h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,9 +544,11 @@ nav p {
           justify-content: start;
   font-weight: normal;
   color: #4b4b4b;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
 }
 
-.menu p span {
+.menu h2 span {
   border-bottom: solid 3px #99e2d0;
 }
 
@@ -851,7 +873,7 @@ li:hover .anim .icon i {
         -ms-flex-pack: left;
             justify-content: left;
   }
-  .title .title1 h1 {
+  .title .title1 p {
     margin-right: 4rem;
   }
   .title .title1 .like-btn {
@@ -871,19 +893,19 @@ li:hover .anim .icon i {
     position: relative;
     padding-bottom: 5rem;
   }
-  .menu .entrees,
-  .menu .plats,
-  .menu .desserts {
-    width: 35%;
+  .menu #entrees,
+  .menu #plats,
+  .menu #desserts {
+    width: 33%;
   }
-  .menu .entrees li h1,
-  .menu .plats li h1,
-  .menu .desserts li h1 {
+  .menu #entrees li .h1,
+  .menu #plats li .h1,
+  .menu #desserts li .h1 {
     font-size: 16px;
   }
-  .menu .entrees li h2,
-  .menu .plats li h2,
-  .menu .desserts li h2 {
+  .menu #entrees li .h2,
+  .menu #plats li .h2,
+  .menu #desserts li .h2 {
     font-size: 14px;
   }
   .menu .bouton {

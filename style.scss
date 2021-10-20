@@ -80,13 +80,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2000%;
+  font-size: 400px;
   width: 100%;
   height: 100%;
   top: 0;
   opacity: 0;
   color: white;
   animation: spin 3s;
+  z-index: 0;
  
   i{
   transform: scale(1);
@@ -103,6 +104,7 @@ nav {
 }
 @keyframes spin {
   0%{
+    z-index: 1000;
     opacity: 1;
     background: linear-gradient(to bottom, $roseP 0%, $violetP 100%);
   }
@@ -154,6 +156,9 @@ nav {
     justify-content: center;
     align-items: center;
    
+    p{
+     font-weight: bold; 
+    }
     button {
       margin: 1rem 0rem;
     }
@@ -162,9 +167,10 @@ nav {
     text-align: center;
     margin-bottom: 1rem;
 
-    h1 {
+    p {
       display: flex;
       justify-content: flex-start;
+      font-weight: bold;
     }
 
     ul {
@@ -193,6 +199,8 @@ nav {
       p {
         color: white;
         position: absolute;
+        display: flex;
+        justify-content: center;
         left: 0.5rem;
         background: $violet;
         border-radius: 1rem;
@@ -215,9 +223,11 @@ nav {
   padding: 1rem 1rem;
   background: #f7f7f7;
 
-  h1 {
+  p {
     display: flex;
     justify-content: flex-start;
+    font-weight: bold;
+    margin-left: 0;
   }
 }
 
@@ -251,11 +261,12 @@ nav {
       
       
       
-      & p {
+       p {
         position: absolute;
         top: 20px;
         right: 20px;
         color: #13614d;
+        font-weight: normal;
         background-color: #99e2d0;
         padding: 0.25rem;
         border-radius: 0.1rem;
@@ -369,7 +380,6 @@ nav {
     font-family: $shrink;
     background: $lightgrey;
     width: 100%;
-    
     position: absolute;
     top: 17rem;
     border-radius: 2rem 2rem 0rem 0rem;
@@ -378,7 +388,9 @@ nav {
     align-items: center;
 
   p {
-      font-size: 28px;
+      padding-top: 2px;
+      margin-left: 1rem;
+      font-size: 27px;
       font-weight: normal;
     }
 
@@ -421,12 +433,16 @@ nav {
 }
 .menu {
   background: #f7f7f7;
+  padding: 0rem 0.5rem;
 
-  p {
+  h2 {
     display: flex;
     justify-content: start;
     font-weight: normal;
     color: rgb(75, 75, 75);
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    
 
     span {
       border-bottom: solid 3px $vert;
@@ -681,7 +697,7 @@ li:hover {
 
   .title .title1 {
     justify-content: left;
-    h1 {
+    p {
       margin-right: 4rem;
     }
     .like-btn{
@@ -696,20 +712,19 @@ li:hover {
   .menu {
     display: flex;
     justify-content: space-between;
-
     position: relative;
     padding-bottom: 5rem;
 
-    .entrees,
-    .plats,
-    .desserts {
-      width: 35%;
+    #entrees,
+    #plats,
+    #desserts {
+      width: 33%;
 
       li {
-        h1 {
+        .h1 {
           font-size: 16px;
         }
-        h2 {
+        .h2 {
           font-size: 14px;
         }
       }
